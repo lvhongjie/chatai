@@ -1,0 +1,27 @@
+<style>
+.tooltip {
+  position: absolute;
+  background-color:#ffffff;
+  width:15%;
+  height:65px;
+  top:0px;
+  right:0px;
+  color: aliceblue;
+  text-align: center;
+  z-index: 9999; /* 设置较大的正整数值 */
+}
+
+/*.NavigationBar {*/
+/*  border: none;*/
+/*  border-radius: 0;*/
+/*}*/
+</style>
+<script>
+  var token=localStorage.getItem("token");
+  if(token!=null){
+	  document.write('<div class="tooltip"></div>');
+	  document.write('<iframe style="border: 0px; width: 100%;height: 200%;" src="https://vv1d8hlpk79.feishu.cn/wiki/space/7293187209577086979?ccm_open_type=lark_wiki_spaceLink"></iframe>');
+  }else{
+	 alert("系统未登录,不能查看课程!"); 
+  }
+</script>
